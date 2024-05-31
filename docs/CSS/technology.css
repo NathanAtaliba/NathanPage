@@ -27,8 +27,7 @@
 }
 
 li{
-    margin: 30px;
-
+    margin: 50px;
 }
 
 button {
@@ -58,5 +57,18 @@ button:hover {
     align-items: center;
     justify-content: center; 
     position: relative;
-    background: red;
+    background: #1C1C1C;
+}
+
+.lista-2{
+    width: 2000px;
+    height: 100vh;
+    color: #fff;
+    list-style-type: none; 
+    font-size: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
 }

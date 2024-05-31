@@ -44,7 +44,7 @@ button {
 
 button:hover {
     color: #6959CD;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -54,10 +54,19 @@ button:hover {
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center; 
     position: relative;
-    background: red;
+    background: #1C1C1C;
+    color: #fff;
 }
-
+h1{
+    font-size: 3rem;
+    margin: 10px;
+    color: #6959CD;
+}
+h2{
+    font-size: 2rem;
+    margin: 10px;
+}
