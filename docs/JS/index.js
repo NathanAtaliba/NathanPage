@@ -1,5 +1,11 @@
 function home(){
-    window.location.href = "../index.html"
+    var url = window.location.href;
+    const stringAprocurar = 'docs/index.html'
+    if(url.includes(stringAprocurar))
+        window.location.href = "index.html"
+    else{
+        window.location.href = "../index.html"
+    }
 }
 
 function contact(){
