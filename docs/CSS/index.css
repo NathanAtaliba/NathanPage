@@ -1,34 +1,39 @@
-*{
+/* CSS otimizado */
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionando box-sizing para melhor controle de layouts */
 }
 
-.header{
-    background-color: #000; 
-    color: #fff;   
+/* Estilos para dispositivos móveis */
+.header {
+    background-color: #000;
+    color: #fff;
     width: 100%;
 }
 
-.nav{
-    padding: 20px;
+.nav {
+    padding: 10px; /* Reduzindo padding para dispositivos móveis */
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-.lista{
-    list-style-type: none; 
+.lista {
+    list-style-type: none;
     width: 100%;
-    height: 150px;
-    font-size: 2rem;
+    height: auto; /* Ajuste de altura automática para mobile */
+    font-size: 1.5rem; /* Ajuste de tamanho de fonte para mobile */
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 0; 
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: column; /* Alinhamento em coluna para mobile */
 }
 
-li{
-    margin: 30px;
-
+li {
+    margin: 15px; /* Ajuste de margem para mobile */
 }
 
 button {
@@ -39,28 +44,70 @@ button {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 button:hover {
     color: #6959CD;
-    cursor:pointer;
 }
 
 .main {
-    padding: 20px; 
-    font-size: 2rem;
-    height: 100vh;
+    padding: 10px; /* Reduzindo padding para dispositivos móveis */
+    font-size: 1.5rem; /* Ajuste de tamanho de fonte para mobile */
+    height: auto; /* Altura automática para mobile */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     position: relative;
     background: #1C1C1C;
     color: #fff;
 }
 
-h1{
-    margin:30px;
+h1 {
+    margin: 20px; /* Ajuste de margem para mobile */
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) {
+    .nav {
+        padding: 20px; /* Ajuste de padding para tablets */
+    }
+
+    .lista {
+        height: 100px; /* Ajuste de altura para tablets */
+        font-size: 1.75rem; /* Ajuste de tamanho de fonte para tablets */
+        flex-direction: row; /* Alinhamento em linha para tablets */
+    }
+
+    .main {
+        padding: 20px; /* Ajuste de padding para tablets */
+        font-size: 2rem; /* Ajuste de tamanho de fonte para tablets */
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 1024px) {
+    .nav {
+        padding: 30px; /* Ajuste de padding para desktops */
+    }
+
+    .lista {
+        height: 150px; /* Ajuste de altura para desktops */
+        font-size: 2rem; /* Ajuste de tamanho de fonte para desktops */
+    }
+
+    li {
+        margin: 30px; /* Ajuste de margem para desktops */
+    }
+
+    .main {
+        padding: 30px; /* Ajuste de padding para desktops */
+        font-size: 2.5rem; /* Ajuste de tamanho de fonte para desktops */
+    }
+
+    h1 {
+        margin: 30px; /* Ajuste de margem para desktops */
+    }
 }

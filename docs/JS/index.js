@@ -2,7 +2,8 @@ function home(){
     var url = window.location.href;
     const stringAprocurar = 'docs/index.html';
     const stringAprocurarDois = 'NathanPage/index.html';
-    if(url.includes(stringAprocurar) || url.includes(stringAprocurarDois))
+    const stringAprocurarTres = 'NathanPage/';
+    if(url.includes(stringAprocurar) || url.includes(stringAprocurarDois)|| url.includes(stringAprocurarTres))
         window.location.href = "index.html"
     else{
         window.location.href = "../index.html"
